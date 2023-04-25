@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* define the custom properties */
 :root {
   --primary-color: #181818;
@@ -6,6 +7,7 @@
   --main-typography: Arial, Helvetica, sans-serif;
   --secondary-typography: Verdana;
 }
+
 /* adapt them to dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -13,6 +15,7 @@
     --secondary-color: #181818;
   }
 }
+
 /* set whether a user has activated the high contrast mode (WD) */
 @media (prefers-contrast: high) {
   :root {
@@ -30,6 +33,7 @@
     transition: none !important;
   }
 }
+
 /* reset margins and paddings of all labels */
 * {
   margin: 0;
@@ -142,6 +146,7 @@ label {
   -moz-appearance: none;
   appearance: none; */
 }
+
 /* reset tables */
 table,
 tr,
@@ -149,12 +154,14 @@ td {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* avoid SVG problems */
 svg {
   width: 100%;
   display: block;
   fill: currentColor;
 }
+
 /* set the typography for the entire website */
 body {
   min-height: 100vh;
